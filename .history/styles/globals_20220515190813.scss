@@ -1,0 +1,32 @@
+@import "./Containers/Container.scss";
+@import "./Header/Header.scss";
+@import "./Modal/MenuModal.scss";
+@import "./Home/Home.scss";
+@import "./Home//HomeHeader.scss";
+@import "./Home/HomeSection.scss";
+@import "./Home/CarouselCards/CarouselCards.scss";
+@import "./Home/NewCarouselItems.scss";
+@import "./Home/HomeSubscribeSection.scss";
+@import "./Footer/Footer.scss";
+@import "./Messages/Message.scss";
+@import "./Button/Button.scss";
+@import "./WhiteButton/WhiteButton.scss";
+@import "./MenuIcon/MenuIcon.scss";
+@import "./Logo/Logo.scss";
+@import "./MenuIcon/SubMenuItem/SubMenuItem.scss";
+@import "./MenuIcon/FooterItem/FooterItem.scss";
+@import "./MenuIcon/FooterItem/FooterItem.scss";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+* {
+  box-sizing: border-box;
+}

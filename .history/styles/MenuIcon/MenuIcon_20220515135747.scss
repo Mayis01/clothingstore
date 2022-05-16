@@ -1,0 +1,43 @@
+.OpenMenu,.CloseMenu {
+    display: none;
+}
+
+
+.MobileWrapper{
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 60px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    // gap: 40px;
+    overflow-y: auto;
+    touch-action: cross-slide-y;
+
+    
+}
+
+.MenuResponse{
+
+    >ul{
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1190px) {
+    .OpenMenu {
+        cursor: pointer;
+        display: block;
+    }
+
+    .WrapperResIcon {
+        min-height: auto;
+        width: 30px;
+        order: -1;
+    }
+    .CloseMenu {
+        cursor: pointer;
+        display: block;
+    }
+}

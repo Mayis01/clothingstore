@@ -1,0 +1,209 @@
+@mixin Arrow() {
+    // transform: translateY(-30%);
+    // transition: all 0ms;
+    border: none;
+    background-color: white;
+    width: 32px;
+    height: 32px;
+}
+
+@mixin SeeAll() {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    text-transform: capitalize;
+    color: #161616;
+    margin-left: 10px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+html.has-scroll-smooth {
+    overflow: hidden;
+}
+
+.Description {
+    padding-top: 5px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    > h3 {
+        padding-top: 20px;
+        /* New arrivals */
+        display: flex;
+        align-items: center;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 32px;
+        /* identical to box height */
+        text-transform: uppercase;
+        color: #161616;
+    }
+}
+
+.StyleSeeAll {
+    @include SeeAll();
+    margin-top: 6px;
+}
+
+.StyleSeeAllRes {
+    @include SeeAll();
+    margin-top: 10px;
+}
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-wrapper {
+    display: flex;
+
+    width: 100%;
+    // position: relative;
+}
+
+.carousel-content-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-content {
+    display: flex;
+    gap: 10px;
+    transition: all 250ms linear;
+    -ms-overflow-style: none; /* hide scrollbar in IE and Edge */
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+}
+
+/* hide scrollbar in webkit browser */
+.carousel-content::-webkit-scrollbar,
+.carousel-content::-webkit-scrollbar {
+    display: none;
+}
+
+.carousel-content > * {
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.left-arrow,
+.right-arrow {
+    @include Arrow();
+
+    &:hover {
+        background: #4c4c4c;
+        > svg {
+            /* Vector */
+            margin-left: -4px;
+            > path {
+                fill: #ffffff !important;
+            }
+        }
+        /* Property 1=hover */
+    }
+}
+
+.left-arrow {
+    color: black;
+}
+
+// .left-arrow-disabled,.right-arrow-disabled {
+//     @include Arrow();
+//     color: rgb(170, 170, 159) !important;
+// }
+
+.right-arrow {
+    color: black;
+}
+
+.carousel-content.show-2 > * {
+    width: 50%;
+}
+
+.carousel-content.show-3 > * {
+    width: calc(100% / 3);
+}
+
+.carousel-content.show-4 > * {
+    width: calc(100% / 4);
+}
+
+@media (max-width: 1440px) {
+    .carousel-content {
+        gap: 10px;
+        margin-left: -30px;
+    }
+}
+.StyleSeeAllRes {
+    display: none;
+}
+
+.StyleSeeAll {
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    .left-arrow,
+    .right-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .StyleSeeAllRes {
+        display: block;
+    }
+
+    .StyleSeeAll {
+        display: none;
+    }
+
+    .ButtonsForCarousel {
+        display: none;
+    }
+}
+
+@media (max-width: 875px) {
+    .StyleSeeAllRes {
+        display: block;
+    }
+
+    .StyleSeeAll,
+    .ButtonsForCarousel {
+        display: none;
+    }
+}
+
+@media (max-width: 690px) {
+    .carousel-container {
+        display: none;
+    }
+
+    .Description {
+        > h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    .StyleSeeAllRes {
+        font-size: 16px !important;
+        line-height: 20px !important;
+        margin-top: 13px;
+    }
+}
+
+@media (max-width: 361px) {
+    .Wrapper {
+        margin-top: 50px;
+    }
+}

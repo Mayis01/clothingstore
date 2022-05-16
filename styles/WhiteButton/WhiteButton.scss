@@ -1,0 +1,42 @@
+
+.WrapperWhiteButton {
+    cursor: pointer;
+    // width: 203px; // help
+    height: 44px;
+    background-color: #ffffff;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(20px);
+    padding-top: 9px;
+    padding: 10px 20px;
+    > span {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        text-transform: uppercase;
+        color: #161616;
+        // margin-left: 10px !important;
+        > svg {
+            margin-left: 10px;
+            margin-bottom: 2px;
+            transition: all 0.2s;
+        }
+    }
+
+    &:hover {
+
+       padding-right: 15px;
+        > span {
+            svg {
+                margin-left: 15px;
+                transition: all 0.2s;
+            }
+        }
+    }
+}
+
+
+
+

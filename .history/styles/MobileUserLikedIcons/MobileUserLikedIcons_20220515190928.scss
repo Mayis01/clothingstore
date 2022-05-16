@@ -1,0 +1,225 @@
+.LayoutUserLikedIconWrapper{
+    position: fixed;
+    bottom: 0;
+}
+
+
+.MobileIconsWrapper{
+
+    /* nav bar */
+
+position: absolute;
+width: 1024px;
+height: 48px;
+left: 0px;
+top: 1318px;
+
+background: #FFFFFF;
+box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.1);
+
+
+/* 1 */
+
+position: absolute;
+width: 256px;
+height: 48px;
+left: 0px;
+top: 0px;
+
+
+
+/* home_black_24dp (2) 1 */
+
+position: absolute;
+width: 30px;
+height: 30px;
+left: 113px;
+top: 9px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 16.67%;
+
+background: #000000;
+
+
+/* 2 */
+
+position: absolute;
+width: 256px;
+height: 48px;
+left: 256px;
+top: 0px;
+
+
+
+/* shopping_cart_black_24dp 1 */
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 116px;
+top: 12px;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 4.17%;
+right: 12.47%;
+top: 8.33%;
+bottom: 8.33%;
+
+background: #AAAAAA;
+
+
+/* 3 */
+
+position: absolute;
+width: 256px;
+height: 48px;
+left: 512px;
+top: 0px;
+
+
+
+/* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 116px;
+top: 12px;
+
+
+
+/* favorite_border_black_24dp 2 */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 8.33%;
+right: 8.33%;
+top: 12.5%;
+bottom: 11.04%;
+
+background: #AAAAAA;
+
+
+/* 4 */
+
+position: absolute;
+width: 256px;
+height: 48px;
+left: 768px;
+top: 0px;
+
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 10px;
+
+position: absolute;
+width: 24px;
+height: 24px;
+left: 116px;
+top: 12px;
+
+
+
+/* person_black_24dp 1 */
+
+width: 24px;
+height: 24px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* Vector */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+
+
+/* Vector */
+
+position: absolute;
+left: 16.67%;
+right: 16.67%;
+top: 16.67%;
+bottom: 16.67%;
+
+background: #AAAAAA;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

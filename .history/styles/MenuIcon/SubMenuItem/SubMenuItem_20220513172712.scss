@@ -1,0 +1,58 @@
+.BoxWrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32px;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+    color: #161616 !important;
+}
+
+.MuiTypography-root {
+    /* NEw and featured */
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+
+    color: #161616;
+}
+
+// .MuiAccordionSummary-content{
+//     margin-left: -15px;
+// }
+
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    // background-color: white !important;
+    color: #161616 !important;
+    background-color: #ffffff !important;
+}
+
+.css-1elwnq4-MuiPaper-root-MuiAccordion-root {
+    box-shadow: none !important;
+}
+
+.css-sh22l5-MuiButtonBase-root-MuiAccordionSummary-root{
+    padding: 0 !important;
+}
+
+.subItemss {
+    // margin-left: -50px;
+    
+    > li {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #4C4C4C;
+        list-style: none;
+        margin: 12.5px 0;
+        text-transform: lowercase;
+    }
+}

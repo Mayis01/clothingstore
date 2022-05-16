@@ -1,0 +1,49 @@
+.SuccesBox {
+    width: auto;
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 50px;
+    padding-left: 20px;
+    position: fixed;
+    z-index: 5555;
+    right: -400px;
+    top: 100px;
+    border: 2px solid #e8e8e8;
+
+    > svg {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        > p {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            /* identical to box height */
+            color: #161616;
+            margin-left: 20px;
+            margin-top: 15px;
+            // padding-top: 20px;
+        }
+    }
+}
+
+.showMessage {
+    transform: translate(-400px);
+    transition: transform 0.9s;
+}
+
+.removeMessage {
+    transform: translate(400px);
+    transition: transform 0.9s;
+}

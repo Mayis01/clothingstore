@@ -1,0 +1,102 @@
+.FooterWrapper {
+  width: 100%;
+  min-height: 360px;
+  height: auto;
+  background: #262626;
+  padding-top: 60px;
+  margin-top: 80px;
+  padding-bottom: 27px;
+}
+
+.WrapperCategories {
+  height: 230px;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-template-rows: repeat(3, auto);
+  border-bottom: 1px solid white;
+  > div {
+    > h3 {
+      /* Categories */
+
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      /* identical to box height */
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    > ul {
+      margin-left: -30px;
+      margin-top: 20px;
+      > li {
+        /* Men */
+        display: flex;
+        gap: 12px;
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        color: #d4d4d4;
+        list-style: none;
+        text-align: left;
+        margin: 5px 0;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.WrapperIcons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 28px;
+  > div {
+    > p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 15px;
+
+      color: #ffffff;
+    }
+  }
+}
+
+.Icons {
+  > svg {
+    margin: 0 10px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1045px) {
+  .WrapperCategories {
+    display: flex;
+    justify-content: space-between;
+
+    // grid-template-columns: repeat(3, auto);
+    // grid-template-rows: repeat(3, auto);
+    > div {
+      > ul {
+        > li {
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .FooterWrapper {
+    display: none;
+  }
+}

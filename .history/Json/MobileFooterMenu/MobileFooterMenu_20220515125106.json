@@ -1,0 +1,41 @@
+[
+    {
+        "subDescription": "English",
+        "subItems": [
+            {
+                "subItem": "Russian"
+            },
+            {
+                "subItem": "Armenian"
+            }
+        ]
+    },
+    {
+        "subDescription": "HElp & infromation",
+        "subItems": [
+            {
+               "subItem": "Privacy Policy"
+            },
+            {
+               "subItem": "About Us"
+            },
+            {
+               "subItem": "Delivery Service"
+            },
+            {
+               "subItem": "Blog"
+            }
+        ]
+    },
+    {
+        "subDescription": "get in touch",
+        "subItems": [
+            {
+               "subItem": "example@gmail.com"
+            },
+            {
+               "subItem": "(808) 555-0111"
+            }
+        ]
+    }
+]

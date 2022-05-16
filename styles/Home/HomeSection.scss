@@ -1,0 +1,265 @@
+@mixin imagesStyle($imgUrl) {
+    max-width: auto;
+    max-height: auto;
+    background-image: $imgUrl;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Categorie1 {
+    @include imagesStyle(url("../../images/Categories.png"));
+    grid-area: header;
+}
+
+.Categorie2 {
+    @include imagesStyle(url("../../images/Categories.png"));
+    grid-area: menu;
+}
+
+.Categorie3 {
+    @include imagesStyle(url("../../images/CenterCateg.png"));
+
+    height: 620px !important;
+    grid-area: main;
+}
+
+.Categorie4 {
+    @include imagesStyle(url("../../images/Categories.png"));
+    grid-area: right;
+}
+
+.Categorie5 {
+    @include imagesStyle(url("../../images/Categories.png"));
+    grid-area: footer;
+}
+
+.girdParent {
+    padding: 80px 0;
+    display: grid;
+    grid-template-areas:
+        "header header main main right right"
+        "menu menu main main  footer footer";
+
+    gap: 20px;
+    > div {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        padding-top: 20px;
+    }
+}
+
+.ParentColls {
+    display: flex;
+    justify-content: space-between;
+    // flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 80px;
+    > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 100px;
+        > div {
+            width: 406px;
+            height: 274px;
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(10px);
+            transition: backdrop-filter ease 0.2s;
+            padding: 40px 46px;
+            &:hover {
+                backdrop-filter: blur(20px);
+                transition: all ease 0.1s;
+                cursor: pointer;
+            }
+            > h4 {
+                /* Tortor convallis tristique */
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 26px;
+                line-height: 32px;
+                text-align: center;
+                text-transform: uppercase;
+                color: #000000;
+            }
+
+            > p {
+                /* Neque in arcu diam, feugiat ultricies tortor et. Interdum quam elit. */
+                font-family: "Montserrat";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                color: #4c4c4c;
+            }
+        }
+    }
+}
+
+.Coll1 {
+    @include imagesStyle(url("../../images/clothes1.png"));
+    min-width: 200px !important;
+
+    min-height: 100px !important;
+}
+
+.Coll2 {
+    @include imagesStyle(url("../../images/clothes2.png"));
+    min-width: 200px !important;
+    min-height: 100px !important;
+}
+.HomeSectionButton {
+    margin-left: 42px !important;
+    margin-top: 30px;
+    width: 230px !important;
+}
+
+@media (max-width: 1240px) {
+    .ParentColls {
+        > div {
+            padding: 40px 23px;
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .girdParent {
+        grid-template-areas:
+            "header header  "
+            "main main"
+            "menu menu "
+            "right right"
+            "footer footer";
+    }
+
+    .Categorie1,
+    .Categorie2,
+    .Categorie3,
+    .Categorie4,
+    .Categorie5 {
+        height: 260px !important;
+        background-position: top;
+    }
+
+    .ParentColls {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+
+        > div {
+            max-width: 452px;
+            max-height: 353px;
+            padding: 40px 23px;
+         
+        }
+    }
+}
+
+@media (max-width: 495px) {
+
+    .Categorie1,
+    .Categorie2,
+    .Categorie3,
+    .Categorie4,
+    .Categorie5 {
+        height: 160px !important;
+        
+    }
+
+    .ParentColls {
+        > div {
+            max-width: 343px;
+            max-height: 269px;
+            padding: 35px 20px;
+            > div {
+                max-width: 303px;
+                max-height: 200px;
+                padding: 20px;
+                > h4 {
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+                > p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #4c4c4c;
+                }
+            }
+        }
+    }
+
+    .HomeSectionButton {
+        margin-left: 15px !important;
+    }
+}
+@media (max-width: 430px) {
+    
+    .girdParent{
+        margin-left: 10px;
+    }
+    
+}
+
+
+@media (max-width: 360px) {
+    .ParentColls {
+        > div {
+            max-width: 303px;
+            max-height: 249px;
+            padding: 30px 20px;
+            > div {
+                max-width: 283px;
+                max-height: 190px;
+                padding: 26px;
+                > h4 {
+                    font-size: 17px;
+                  
+                }
+                >p{
+                    font-size: 12px;
+                }
+             
+            }
+        }
+    }
+
+    .HomeSectionButton {
+        margin-top: 0px !important;
+        margin-left: 6px !important;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 330px) {
+    .ParentColls {
+        > div {
+            max-width: 303px;
+            
+            > div {
+                max-width: 273px;
+                
+                > h4 {
+                    font-size: 16px;
+                    
+                }
+                > p {
+                    font-size: 12px;
+                    
+                }
+            }
+        }
+    }
+
+    .HomeSectionButton {
+        margin-top: -7px !important;
+        margin-left: 0px !important;
+    }
+
+}

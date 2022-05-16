@@ -1,0 +1,198 @@
+.Layer {
+    width: 100%;
+    height: 510px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.Response {
+    display: none;
+}
+.NoResponse {
+    display: block;
+}
+
+.HeaderBG {
+    > img {
+        width: 100%;
+        position: relative;
+    }
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    width: 5% !important;
+}
+
+.boxH1 {
+    max-width: 516px;
+    position: absolute;
+    padding: 0;
+    top: 25%;
+    z-index: 3;
+
+    > h1 {
+        /* NEW Collection */
+
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        /* identical to box height */
+        text-transform: uppercase;
+
+        color: #161616;
+    }
+
+    > h2 {
+        /* Egestas imperdiet turpis est sed et aliquet augue dui. Erat nunc enim vestibulum amet duis pharetra, faucibus arcu. Id id convallis nunc ornare turpis dolor amet est. Ac. */
+
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        color: #161616;
+        margin-top: 10px;
+        /* Inside auto layout */
+    }
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    display: none !important;
+}
+
+.carousel-indicators .active {
+    background-color: #161616 !important;
+    opacity: 1 !important;
+}
+
+.carousel-indicators > button {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 50%;
+    background-color: #161616 !important;
+    opacity: 0.5 !important;
+    margin-left: 10px !important;
+    // margin-right: 10px !important;
+}
+
+.HomeHeaderButton {
+    width: 175px !important;
+    margin-left: -1px;
+}
+
+@media (max-width: 1032px) {
+    .boxH1 {
+        /* NEW Collection */
+        max-width: 440px;
+    }
+}
+
+@media (max-width: 890px) {
+    .carousel-item {
+        height: 390px;
+    }
+    .Response {
+        display: block;
+    }
+
+    .NoResponse {
+        display: none;
+    }
+
+    .HeaderBG {
+        > img {
+            height: 375px;
+            background-position: right;
+        }
+    }
+    .Layer {
+        display: block;
+    }
+    .boxH1 {
+        // margin: 0 130px;
+
+        > h1 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        > h2 {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+}
+
+@media (max-width: 495px) {
+    .boxH1 {
+        width: 343px;
+        left: 15%;
+        > h1 {
+            font-size: 26px;
+            text-align: center;
+        }
+        > h2 {
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .HomeHeaderButton {
+        left: 25%;
+    }
+}
+
+@media (max-width: 415px) {
+    .carousel-item {
+        height: 375px;
+    }
+    .boxH1 {
+        width: 323px;
+        left: 10%;
+    }
+    .carousel-indicators > button {
+        margin-top: 68px !important;
+    }
+}
+@media (max-width: 394px) {
+    .boxH1 {
+
+        
+        left: 9%;
+    }
+    .HomeHeaderButton {
+        left: 23%;
+    }
+}
+
+@media (max-width: 377px) {
+    .boxH1 {
+        left: 8%;
+    }
+}
+
+@media (max-width: 330px) {
+    .boxH1 {
+        width: 303px;
+        left: -3%;
+        padding: 0 16px;
+        > h1 {
+            font-size: 23px;
+            margin-left: 3px;
+        }
+        > h2 {
+            font-size: 11px;
+        }
+    }
+    .HomeHeaderButton {
+        left: 18%;
+    }
+}

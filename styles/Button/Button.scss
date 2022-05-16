@@ -1,0 +1,58 @@
+.BtonWrapper {
+   width: fit-content;
+    height: 44px;
+    border: 2px solid black;
+    position: relative;
+    margin-top: 24px;
+    margin-left: 5px;
+}
+
+.Bton {
+    cursor: pointer;
+    position: absolute;
+// width: fit-content;
+    left: -6px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #f8f8f8;
+    // max-width: 260px;
+    // min-width: 150px;
+    height: 44px;
+    right: 3px;
+    bottom: 3px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    background-color: #161616;
+    // margin-bottom: 100px;
+    // margin-left: 200px;
+    // margin-top: 100px;
+    border: 1px solid #161616;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 12px;
+
+    > svg {
+        margin-left: 10px;
+        transition: all 0.2s;
+        margin-top: -1px;
+    }
+
+    &:hover {
+        
+        > svg {
+            margin-left: 15px;
+            transition: all 0.2s;
+        }
+    }
+}
+
+@media (max-width: 450px) {
+//    .BtonWrapper{
+//        margin-left: 16px !important;
+//    }
+}
+

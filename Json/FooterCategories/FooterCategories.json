@@ -1,0 +1,36 @@
+[
+    {
+        "desc": "categories",
+        "Items": [
+            {
+                "item": "Men"
+            },
+            {
+                "item": "Women"
+            },
+            {
+                "item": "Kids"
+            },
+            {
+                "item": "Sale"
+            }
+        ]
+    },
+    {
+        "desc": "HElp & infromation",
+        "Items": [
+            {
+                "item": "Privacy Policy"
+            },
+            {
+                "item": "About Us"
+            },
+            {
+                "item": "Delivery Service"
+            },
+            {
+                "item": "Blog"
+            }
+        ]
+    }
+]

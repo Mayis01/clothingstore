@@ -1,0 +1,44 @@
+.MobileFooterWrapper {
+    // margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 32px;
+    background-color: #262626;
+}
+
+.FooterSubDescription {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+    color: #ffffff;
+}
+
+.FooterAccordionIcon {
+    color: white !important;
+}
+.FooterSubItems {
+    > li {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        list-style: none;
+        margin: 10px 0;
+    }
+}
+.FooterAccordion {
+    background-color: #262626 !important;
+}
+// .MuiButtonBase-root {
+//     background-color: black;
+// }
